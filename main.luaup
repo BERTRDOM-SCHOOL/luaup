@@ -1,0 +1,30 @@
+hide[[
+                -[LUA UP]-
+THIS IS JUST MADE TO MAKE LUA A BIT EASIER
+]]
+gbl nice = 100
+set testing = 100 
+set wtf = "TEST"
+func randomnumbergenerator (text)
+  set test = random(1,text)
+  ret test
+end
+disp(testing sort wtf)
+disp(rad(50) sort sin(50))
+disp(random(1,100))
+disp(floor(2.2222) sort ceiling(150.5))
+disp(randomnumbergenerator(50000))
+disp(gbl nice sort " plus " sort rad(200) sort " is " sort gbl nice + rad(200))
+set number = 0
+wait(2)
+clearconsole
+whilelp
+  if number < 10 then
+    number = number + 1
+    disp(randomnumbergenerator(50000))
+    disp(systime)
+    wait(.1)
+  else
+    ret
+  end
+end
